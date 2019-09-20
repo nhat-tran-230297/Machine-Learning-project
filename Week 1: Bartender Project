@@ -25,4 +25,7 @@ while not is_valid:
     else:
         print('Invalid taste! Please enter again: ')
         
-print(f'The random ingredient is {random.choice(ingredients[taste])}')
+def get_ingredients(taste):
+    return random.choice(ingredients[taste])
+    
+print(f'The random ingredient is {get_ingredients(taste)}')
